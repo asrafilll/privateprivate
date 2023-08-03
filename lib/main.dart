@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/halaman2.dart';
 import 'package:flutter/material.dart';
 import 'homepage.dart';
 
@@ -16,11 +17,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
-        // fontFamily: 'Trajana Pro',
       ),
-      home: const MyHomePage(
-        title: 'title baru',
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MyHomePage(title: 56),
+        'halaman2': (context) => const Halaman2(),
+      },
     );
   }
 }
