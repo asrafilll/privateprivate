@@ -1,4 +1,5 @@
 import 'package:belajar_flutter/custom_button.dart';
+import 'package:belajar_flutter/halaman_login.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -21,7 +22,10 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text('INi title'),
             CustomButton(
               title: 'Sign Up',
-              onPressed: () => Navigator.pushNamed(context, 'halaman2'),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (builder) => const LoginPage()),
+              ),
             ),
           ],
         ),

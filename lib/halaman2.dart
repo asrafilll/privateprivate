@@ -9,8 +9,10 @@ class Halaman2 extends StatelessWidget {
       appBar: AppBar(
         title: const Text('ini halaman 2'),
       ),
-      body: const Center(
-        child: Text('INI halaman 2'),
+      body: Center(
+        child: InkWell(
+          onTap: () {},
+        ),
       ),
     );
   }
