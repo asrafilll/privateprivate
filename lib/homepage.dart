@@ -1,5 +1,5 @@
 import 'package:belajar_flutter/custom_button.dart';
-import 'package:belajar_flutter/halaman_login.dart';
+import 'package:belajar_flutter/halaman_consume_api_list_user.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -24,7 +24,8 @@ class _MyHomePageState extends State<MyHomePage> {
               title: 'Sign Up',
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (builder) => const LoginPage()),
+                MaterialPageRoute(
+                    builder: (builder) => const ConsumeAPIListUser()),
               ),
             ),
           ],
