@@ -1,6 +1,7 @@
 import 'package:belajar_flutter/custom_button.dart';
-import 'package:belajar_flutter/halaman_consume_api_list_user.dart';
 import 'package:flutter/material.dart';
+
+import 'counter-getx/app_getview.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -25,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (builder) => const ConsumeAPIListUser()),
+                    builder: (builder) => const CounterGetXwithGetView()),
               ),
             ),
           ],

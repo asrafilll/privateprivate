@@ -1,5 +1,6 @@
 import 'package:belajar_flutter/halaman2.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'homepage.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
